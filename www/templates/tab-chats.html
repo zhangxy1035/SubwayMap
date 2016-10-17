@@ -1,16 +1,11 @@
-<ion-view view-title="Chats">
+<ion-view view-title="搜索地铁站点">
   <ion-content>
-    <ion-list>
-      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="chat in chats" type="item-text-wrap" href="#/tab/chats/{{chat.id}}">
-        <img ng-src="{{chat.face}}">
-        <h2>{{chat.name}}</h2>
-        <p>{{chat.lastText}}</p>
-        <i class="icon ion-chevron-right icon-accessory"></i>
-
-        <ion-option-button class="button-assertive" ng-click="remove(chat)">
-          Delete
-        </ion-option-button>
-      </ion-item>
-    </ion-list>
+    <div class="bar bar-header item-input-inset">
+      <label class="item-input-wrapper">
+        <i class="icon ion-ios-search placeholder-icon"></i>
+        <input type="text" ng-model="map.keyword" placeholder="请输入关键字">
+      </label>
+      <button class="button button-balanced" ng-click="mapSearch()">搜索</button>
+    </div>
   </ion-content>
 </ion-view>
