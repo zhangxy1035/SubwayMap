@@ -1,27 +1,3 @@
-<!--<html>-->
-<!--<head>-->
-<!--<meta charset="UTF-8">-->
-<!--&lt;!&ndash;重要meta, 必须!&ndash;&gt;-->
-<!--<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,shrink-to-fit=no"/>-->
-<!--<title>SUBWAY</title>-->
-<!--</head>-->
-<!--<body>-->
-<!--<div id="mysubway"></div>-->
-
-<!--<script src="http://webapi.amap.com/subway?v=1.0&key=ba2f3806a37da4e47ddac32b5ad49352&callback=cbk"></script>-->
-<!--<script type="text/javascript">-->
-    <!--//开启easy模式, 直接完成地铁图基本功能, 无需自己写交互-->
-    <!--window.cbk = function(){-->
-        <!--var mysubway = subway("mysubway", {-->
-            <!--easy: 1-->
-        <!--});-->
-    <!--};-->
-<!--</script>-->
-<!--</body>-->
-<!--</html>-->
-
-
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -35,12 +11,14 @@
   <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
   <link href="css/ionic.app.css" rel="stylesheet">
   -->
+  <!--<script src="http://webapi.amap.com/js/marker2.js"></script>-->
+  <script src="http://webapi.amap.com/subway?v=1.0&key=ba2f3806a37da4e47ddac32b5ad49352&callback=cbk"></script>
 
   <!-- ionic/angularjs js -->
   <script src="lib/ionic/js/ionic.bundle.js"></script>
 
   <!-- cordova script (this will be a 404 during development) -->
-  <script src="cordova.js"></script>
+  <!--<script src="cordova.js"></script>-->
 
   <!-- your app's js -->
   <script src="js/app.js"></script>
@@ -49,9 +27,9 @@
 </head>
 <body ng-app="starter">
 <!--
-  The nav bar that will be updated as we navigate between views bar-stable.
+  The nav bar that will be updated as we navigate between views .
 -->
-<ion-nav-bar class="bar-footer">
+<ion-nav-bar class="bar-positive bar-footer">
 
 </ion-nav-bar>
 <!--
