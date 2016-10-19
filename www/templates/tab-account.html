@@ -1,9 +1,22 @@
-<ion-view view-title="Account">
-  <ion-content>
-    <ion-list>
-    <ion-toggle  ng-model="settings.enableFriends">
-        Enable Friends
-    </ion-toggle>
-    </ion-list>
-  </ion-content>
+<!--<ion-view view-title="个人设置">-->
+  <!--<ion-nav-buttons side="left">-->
+    <!--&lt;!&ndash;<label class="item item-input">&ndash;&gt;-->
+
+    <!--&lt;!&ndash;</label>&ndash;&gt;-->
+    <!--<button class="button button-icon " ng-click="changeSE()" ><b>确认</b></button>-->
+  <!--</ion-nav-buttons>-->
+  <!--<ion-content  id="mysubway">-->
+  <!--</ion-content>-->
+<!--</ion-view>-->
+
+<ion-view view-title="归去来兮">
+  <div style="position:absolute;z-index: 1">
+    <div id="mysubway" style="width:auto;height: auto"></div>
+    <div style="margin-top:3rem;margin-right:20rem;position:absolute;z-index:1000;">
+        <input type="text" ng-model="person.start" style="color: #4d4d4d"  placeholder="起点">
+        <input type="text" ng-model="person.end"  placeholder="终点">
+      <button class="button  button-positive " ng-click="changeSE()" ><b>确认</b></button>
+    </div>
+  </div>
 </ion-view>
+

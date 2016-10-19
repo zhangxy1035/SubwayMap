@@ -1,11 +1,10 @@
-<ion-view view-title="搜索地铁站点">
-  <ion-content>
-    <div class="bar bar-header item-input-inset">
-      <label class="item-input-wrapper">
-        <i class="icon ion-ios-search placeholder-icon"></i>
-        <input type="text" ng-model="map.keyword" placeholder="请输入关键字">
-      </label>
-      <button class="button button-balanced" ng-click="mapSearch()">搜索</button>
-    </div>
+<ion-view view-title="">
+  <ion-nav-buttons side="left">
+    <label class="item item-input">
+      <input type="text" ng-model="subwayserch.sub"  placeholder="例如：8号线">
+    </label>
+    <button class="button button-icon " ng-click="subways()" ><b>确认</b></button>
+  </ion-nav-buttons>
+  <ion-content  id="mysubway">
   </ion-content>
 </ion-view>
