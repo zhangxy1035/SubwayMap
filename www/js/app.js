@@ -6,10 +6,10 @@
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
 angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
-  .constant("CONFIG",{
-    host: "http://121.199.75.153:9909",//地址
-    version:'1.0.0'//版本
-  })
+  // .constant("CONFIG",{
+  //   host: "http://121.199.75.153:9909",//地址
+  //   version:'1.0.0'//版本
+  // })
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
