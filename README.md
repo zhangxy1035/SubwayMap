@@ -7,9 +7,9 @@
 index.html中主要的代码  
 ` < src="http://webapi.amap.com/subway?v=1.0&key=你的key&callback=cbk"></script>
 `  
-`controller.js中主要的代码  
-{    mysubway = subway("mysubway",{
-      easy: 1,
-      adcode: '1100'
-    });`  
+controller.js中主要的代码  
+`mysubway = subway("mysubway",{  
+      easy: 1,  
+      adcode: '1100'  
+      });`  
     
