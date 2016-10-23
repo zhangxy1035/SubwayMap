@@ -2,7 +2,7 @@ angular.module('starter.controllers', [])
 
 .controller('DashCtrl', function($scope) {
   var mysubway='';
-  window.cbk1 = function(){
+  window.cbk = function(){
     mysubway = subway("mysubway",{
       easy: 1,
       adcode: '1100'
@@ -26,7 +26,7 @@ angular.module('starter.controllers', [])
 })
 
 .controller('ChatsCtrl', function($scope) {
-  window.cbk2 = function(){
+  window.cbk = function(){
     var mysubway = subway("mysubway",{
       easy: 1,
       adcode: '1100'
@@ -61,7 +61,7 @@ angular.module('starter.controllers', [])
 })
 
 .controller('AccountCtrl', function($scope) {
-  window.cbk3 = function(){
+  window.cbk = function(){
     var mysubway = subway("mysubway",{
       easy: 1,
       adcode: '1100000'
